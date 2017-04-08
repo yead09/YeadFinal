@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.yead.yeadfinal.Gesture">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/black"
+        >
+
+        <Button
+            android:id="@+id/leftbutton"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:text="Gesture"
+            android:textSize="22sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+           />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/gesture"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_marginLeft="-325dp"
+        android:layout_below="@+id/title_bar"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic4"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

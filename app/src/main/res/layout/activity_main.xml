@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context="com.example.yead.yeadfinal.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/welcome"
+            android:text="Click here to open application"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/anim_tv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="Welcome"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_below="@+id/anim_tv"
+        android:layout_marginTop="-50dp">
+
+        <ImageView
+            android:id="@+id/main_play_play"
+            android:layout_width="@dimen/playscreen_play_play_size"
+            android:layout_height="@dimen/playscreen_play_play_size"
+            android:layout_gravity="center"
+            android:background="@drawable/playscreen_play_play" />
+
+        <ProgressBar
+            android:id="@+id/pb_play_loading"
+            android:layout_width="@dimen/playscreen_play_play_size"
+            android:layout_height="@dimen/playscreen_play_play_size"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>
