@@ -36,14 +36,14 @@ public class Gesture extends BaseActivity implements View.OnTouchListener {
     }
 
     public void hw4btop(){
-        ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 0, 950); //translationY
+        ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 0, 1000); //translationY
         animator.setDuration(1000);
         animator.start();
         check = true;
     }
 
     public void hw4btcl(){
-        ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 950, 0); //translationY
+        ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 1000, 0); //translationY
         animator.setDuration(1000);
         animator.start();
         check = false;
@@ -96,13 +96,13 @@ public class Gesture extends BaseActivity implements View.OnTouchListener {
         }
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY){
             if(counter==0){
-                ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 0, 950,950,950,950); //translationY
+                ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 0, 1000,1000,1000,1000); //translationY
                 animator.setDuration(1000);
                 animator.start();
                 counter++;
             }
             else{
-                ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 950, 0,0,0,0); //translationY
+                ObjectAnimator animator = ObjectAnimator.ofFloat(gestureview, "translationX", 1000, 0,0,0,0); //translationY
                 animator.setDuration(1000);
                 animator.start();
                 counter=0;

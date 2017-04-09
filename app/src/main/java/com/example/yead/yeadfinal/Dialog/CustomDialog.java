@@ -24,7 +24,7 @@ public class CustomDialog extends Dialog {
         listener.onClickListener();
         Intent intent = new Intent(getContext(), Opener.class );
         getContext().startActivity(intent);
-        //dismiss();
+        dismiss();
     }
     private ICustomDialogEventListener listener;
 
